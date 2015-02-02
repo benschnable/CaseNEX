@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer</title>
+        <link rel="stylesheet" href="timer.css">
+    </head>
+    <body>
+        <div class="ui-timer_container">
+            <div class="ui-timer_header">Stopwatch</div>
+            <div class="ui-time_container">
+                <div class="ui-lap_time" id="lapTime">00:00.00</div>
+                <div id="time">00:00.00</div>
+            </div>
+            <div class="ui-controls">
+                <div id="button-left">
+                    <button class="ui-start" onclick="startTimer()">Start</button>
+                </div>
+                <div id="button-right">
+                    <button class="ui-lap ui-inactive" onclick="lap()">Lap</button>
+                </div>
+            </div>
+            <div id="lap_record" class="ui-lap_record"></div>
+        </div>
+    </body>
+    <script src="timer.js"></script>
+</html>
